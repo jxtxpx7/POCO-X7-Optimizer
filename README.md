@@ -1,147 +1,148 @@
 # 📱 POCO X7 Optimizer
 
-> **⚡ Transforme seu POCO X7 em uma máquina de performance!**  
-> Scripts e ferramentas para otimização completa do dispositivo.
+> **⚡ Turn your POCO X7 into a performance machine!**  
+> Complete optimization scripts and tools for your device.
 
 ---
 
-## 📖 **Minha História**
-Meu POCO X7, apesar de ter **12GB de RAM e 512GB de armazenamento**, sofria com quedas de FPS inaceitáveis. Descobri que o problema era o **bloatware da Xiaomi**. Combinando a ferramenta **Universal Android Debloater** com meus scripts, consegui **80% mais velocidade**! 🚀
+## 📖 **My Story**
+My POCO X7, despite having **12GB RAM and 512GB storage**, suffered from unacceptable FPS drops. I discovered the problem was **Xiaomi's bloatware**. By combining the **Universal Android Debloater** tool with my scripts, I achieved **80% more speed**! 🚀
 
 ---
 
-## 📦 **O Que Você Vai Encontrar Aqui**
+## 📦 **What You'll Find Here**
 
-### 🛠️ **Ferramentas Incluídas:**
+### 🛠️ **Included Tools:**
 ```
 📁 POCO-X7-Optimizer/
-├── ⚡ POCO X7 FINAL.bat          (Script principal de otimização)
+├── ⚡ POCO X7 FINAL.bat          (Main optimization script)
 ├── 🧹 Universal Android Debloater Next Generation.exe
 ├── 🔌 adb.exe                    (Android Debug Bridge)
-├── ⚡ fastboot.exe               (Ferramenta de flashing)
-├── 🔧 AddWinApi.dll              (Dependências Windows)
+├── ⚡ fastboot.exe               (Flashing tool)
+├── 🔧 AddWinApi.dll              (Windows dependencies)
 ├── 🔧 AddWinUbbApi.dll
 ├── 🔌 AdbWinApi.dll
 ├── 🔌 AdbWinUsbApi.dll
-└── 📖 README.md                  (Este arquivo)
+└── 📖 README.md                  (This file)
 ```
 
 ---
 
-## 🚀 **Comece Agora!**
+## 🚀 **Get Started Now!**
 
-### **📥 Download Fácil:**
-1. Acesse: **[https://github.com/jsicppx7/POCO-X7-Optimizer](https://github.com/jsicppx7/POCO-X7-Optimizer)**
-2. Clique no botão verde **"Code"** 
-3. Selecione **"Download ZIP"** 📦
-4. Extraia para uma pasta (ex: `POCO-X7-Optimizer`)
+### **📥 Easy Download:**
+1. Visit: **[https://github.com/jsicppx7/POCO-X7-Optimizer](https://github.com/jsicppx7/POCO-X7-Optimizer)**
+2. Click the green **"Code"** button
+3. Select **"Download ZIP"** 📦
+4. Extract to a folder (e.g., `POCO-X7-Optimizer`)
 
-### **⚡ Como Usar:**
-1. **Conecte** seu POCO X7 via USB
-2. **Ative** Depuração USB no dispositivo
-3. **Execute** `POCO X7 FINAL.bat` como **Administrador** ⚠️
-4. **Siga** as instruções no terminal
-5. **Reinicie** quando solicitado 🔄
-
----
-
-## ⚠️ **AVISO CRÍTICO PARA POCO X7**
-Na aba **"Recomendados"** do Universal Debloater, **NÃO REMOVA**:
-- ❌ `com.miui.cleaner` (Limpeza do MIUI)
-
-Remover este app pode causar problemas no sistema!
+### **⚡ How to Use:**
+1. **Connect** your POCO X7 via USB
+2. **Enable** USB Debugging on device
+3. **Run** `POCO X7 FINAL.bat` as **Administrator** ⚠️
+4. **Follow** terminal instructions
+5. **Restart** when prompted 🔄
 
 ---
 
-## 🛠️ **Comandos ADB Utilizados nos Scripts**
+## ⚠️ **CRITICAL WARNING FOR POCO X7**
+In the **"Recommended"** tab of Universal Debloater, **DO NOT REMOVE**:
+- ❌ `com.miui.cleaner` (MIUI Cleaner)
 
-### 🔧 **1. Comandos Básicos**
+Removing this app may cause system issues!
+
+---
+
+## 🛠️ **ADB Commands Used in Scripts**
+
+### 🔧 **1. Basic Commands**
 ```bash
-adb devices                    # Verificar conexão
-adb reboot                     # Reiniciar dispositivo
-adb shell                      # Acessar terminal do Android
+adb devices                    # Check connection
+adb reboot                     # Restart device
+adb shell                      # Access Android terminal
 ```
 
-### 🗑️ **2. Remoção de Bloatware**
+### 🗑️ **2. Bloatware Removal**
 ```bash
-adb shell pm list packages     # Listar todos os apps
-adb shell pm uninstall -k --user 0 com.app.bloatware  # Remover app
-adb shell pm disable-user --user 0 com.app.desnecessario  # Desabilitar
+adb shell pm list packages     # List all apps
+adb shell pm uninstall -k --user 0 com.app.bloatware  # Remove app
+adb shell pm disable-user --user 0 com.app.unnecessary  # Disable
 ```
 
-### ⚙️ **3. Otimizações de Sistema**
+### ⚙️ **3. System Optimizations**
 ```bash
-# Desacelerar animações (mais fluidez)
+# Slow down animations (more fluidity)
 adb shell settings put global window_animation_scale 0.5
 adb shell settings put global transition_animation_scale 0.5
 
-# Modo performance
+# Performance mode
 adb shell settings put global game_driver_preference 2
 ```
 
-### 📊 **4. Performance Avançada**
+### 📊 **4. Advanced Performance**
 ```bash
-# Limpar caches
+# Clear caches
 adb shell pm trim-caches 9999999999999
 
-# Otimizar memória
+# Optimize memory
 adb shell settings put global sys_perf_memcg 1
 ```
 
-### 🎮 **5. Específicos Xiaomi/POCO**
+### 🎮 **5. Xiaomi/POCO Specific**
 ```bash
-# Reduzir serviços MIUI
+# Reduce MIUI services
 adb shell pm disable-user --user 0 com.miui.analytics
 adb shell settings put global adaptive_battery_management_enabled 0
 ```
 
 ---
 
-## 🔗 **Recursos Adicionais**
+## 🔗 **Additional Resources**
 
-### 📥 **Drivers para Qualquer Celular:**
-- **[Pacote Completo de Drivers](https://griffin-unlocker.com/SoftwareDriverOffline_By_GriffinUnlocker.rar)** 🎯
-- Muito simples: Baixe e instale o driver do seu fabricante
+### 📥 **Drivers for Any Phone:**
+- **[Complete Driver Package](https://griffin-unlocker.com/SoftwareDriverOffline_By_GriffinUnlocker.rar)** 🎯
+- Very simple: Download and install your manufacturer's driver
 
-### 🙏 **Agradecimentos Especiais:**
-- **[Universal Debloater Alliance](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation)** pela ferramenta incrível
-- **Griffin Unlocker** pelo pacote de drivers
-- **Comunidade XDA Developers** pelas otimizações
+### 🙏 **Special Thanks:**
+- **[Universal Debloater Alliance](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation)** for the amazing tool
+- **Griffin Unlocker** for the driver package
+- **XDA Developers Community** for optimizations
 
 ---
 
-## 📞 **Contato e Contribuições**
+## 📞 **Contact and Contributions**
 
-**Encontrou um bug? Tem uma ideia?**  
-Me ajude a melhorar este projeto! 💡
+**Found a bug? Have an idea?**  
+Help me improve this project! 💡
 
 📧 **Email:** [j.pedro1002@gmail.com](mailto:j.pedro1002@gmail.com)
 
-### Como você pode ajudar:
-🐛 **Reportar problemas**  
-💡 **Sugerir melhorias**  
-📱 **Testar em outros modelos**  
-🌍 **Traduções**
+### How you can help:
+🐛 **Report issues**  
+💡 **Suggest improvements**  
+📱 **Test on other models**  
+🌍 **Translations**
 
 ---
 
-## ⚠️ **Avisos de Segurança**
-1. **FAÇA BACKUP** dos seus dados 📂
-2. Use por sua **conta e risco** ⚠️
-3. Siga todas as instruções cuidadosamente 📖
-4. Não interrompa o processo em execução 🚫
+## ⚠️ **Security Warnings**
+1. **BACKUP** your data 📂
+2. Use at your **own risk** ⚠️
+3. Follow all instructions carefully 📖
+4. Don't interrupt running processes 🚫
 
 ---
 
-## 🎯 **Resultados Esperados:**
-- ✅ **Até 80% mais velocidade** ⚡
-- ✅ **Menos consumo de RAM** 🧠
-- ✅ **Bateria mais durável** 🔋
+## 🎯 **Expected Results:**
+- ✅ **Up to 80% more speed** ⚡
+- ✅ **Less RAM consumption** 🧠
+- ✅ **Longer battery life** 🔋
 - ✅ **Zero bloatware** 🧹
-- ✅ **Experência mais fluida** 🎮
+- ✅ **Smoother experience** 🎮
 
-**Divirta-se com seu POCO X7 turbo!** 🚀
+**Enjoy your turbocharged POCO X7!** 🚀
 
 ---
 
-*Compatível com: POCO X7, POCO X7 Pro, Xiaomi similares*
+*Last updated: $(date)*  
+*Compatible with: POCO X7, POCO X7 Pro, similar Xiaomi devices*
