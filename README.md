@@ -142,7 +142,42 @@ Help me improve this project! 💡
 
 **Enjoy your turbocharged POCO X7!** 🚀
 
+📱 Tutorial: How to Enable USB Debugging on Xiaomi (MIUI)
+🔧 1. Enable Developer Options
+Go to Settings (gear icon)
+
+Scroll down and tap "About phone"
+
+Tap "MIUI version" 7 times in a row
+
+You will see the message: "You are now a developer!"
+
+⚙️ 2. Access and Configure Debugging
+Go back to Settings
+
+Tap "Additional settings"
+
+Select "Developer options"
+
+Enable "USB Debugging" (first toggle at the top)
+
+Scroll down and enable "USB Debugging (Security Settings)"
+
+⚠️ IMPORTANT INFORMATION
+For your computer to fully communicate with your phone and perform development tasks, you need to enable BOTH options:
+
+✅ USB Debugging
+
+✅ USB Debugging (Security Settings)
+
+🔐 Security Tip
+Only keep these options enabled when using a trusted computer
+
+Periodically revoke authorizations via "Revoke USB Debugging Authorizations"
+
+💡 All Set!
+Your Xiaomi is now configured for debugging and development. Connect it to your computer via USB cable and authorize the connection when prompted on your phone.
+
 ---
 
-*Last updated: $(date)*  
 *Compatible with: POCO X7, POCO X7 Pro, similar Xiaomi devices*
